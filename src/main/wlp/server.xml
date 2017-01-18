@@ -7,7 +7,7 @@
     <httpEndpoint id="defaultHttpEndpoint"
                   host="*"
                   httpPort="9080">
-        <tcpOptions soReuseAddr="true" inactivityTimeout="120s"/>
+        <tcpOptions soReuseAddr="true" inactivityTimeout="60s"/>
     </httpEndpoint>
 
     <application name="JavaHelloWorldApp" context-root="/JavaHelloWorldApp" location="${appLocation}" type="war"/>
