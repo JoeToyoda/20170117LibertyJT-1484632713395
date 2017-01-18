@@ -10,6 +10,13 @@
         <tcpOptions soReuseAddr="true" inactivityTimeout="60s"/>
     </httpEndpoint>
 
-    <application name="JavaHelloWorldApp" context-root="/JavaHelloWorldApp" location="${appLocation}" type="war"/>
 
+    <application location="HelloWorldServlet.war" id="HelloWorldISE"
+    	name="HelloWorldISE" type="war" context-root="/HelloWorldISE">
+    	<application-bnd>
+    		<security-role name="defaultuser">
+    			<special-subject type="EVERYONE" />
+    		</security-role>
+    	</application-bnd>
+    </application>
 </server>
