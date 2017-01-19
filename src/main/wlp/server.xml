@@ -12,7 +12,7 @@
 
 
     <application location="HelloWorldServlet.war" id="HelloWorldISE"
-    	name="HelloWorldISE" type="war" context-root="/">
+    	name="HelloWorldISE" type="war" context-root="/HelloWorldISE">
     	<application-bnd>
     		<security-role name="defaultuser">
     			<special-subject type="EVERYONE" />
